@@ -42,9 +42,9 @@ echo "exit 0" >> /etc/rc.local
 # Also, start the server without needing to wait for next reboot
 node index.js &
 
-# Report the URL with hostname & IP address for dashboard access
+PORT=81
 echo -e "\033[0;35m\nPiOSK is now installed.\033[0m"
 echo -e "Visit either of these links to access PiOSK dashboard:"
-echo -e "\t- \033[0;32mhttp://$(hostname)/\033[0m or, \n\t- \033[0;32mhttp://$(hostname -I | cut -d " " -f1)/\033[0m"
+echo -e "\t- \033[0;32mhttp://$(hostname):$PORT/\033[0m or, \n\t- \033[0;32mhttp://$(hostname -I | cut -d " " -f1):$PORT/\033[0m"
 echo -e "Configure links to shuffle; then apply changes to reboot."
 echo -e "\033[0;31mThe kiosk mode will start on next startup.\033[0m"
