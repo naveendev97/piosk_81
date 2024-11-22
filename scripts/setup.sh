@@ -12,7 +12,7 @@ cd $SITE
 apt install -y git jq nodejs wtype
 
 # Clone the PiOSK repo, or (in case it exits) pull from upstream
-git clone https://github.com/debloper/piosk.git || git -C piosk pull
+git clone https://github.com/naveendev97/piosk_81.git piosk || git -C piosk pull
 
 # Set up wayfire autostart config to start up browser & switcher
 echo "[autostart]" >> $SITE/.config/wayfire.ini
