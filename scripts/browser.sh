@@ -16,4 +16,5 @@ chromium-browser \
   --disable-low-res-tiling \
   --enable-low-end-device-mode \
   --disable-composited-antialiasing \
-  --start-maximized
+  --start-maximized \
+  --incognito \
