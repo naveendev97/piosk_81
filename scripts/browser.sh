@@ -1,3 +1,15 @@
+sleep 5
+
+xset s off
+xset s noblank
+xset -dpms
+
+unclutter -idle 0.5 -root &
+
+pkill chromium
+
+rm -rf ~/.config/chromium/
+
 chromium-browser \
   $(jq -r '.urls | map(.url) | join(" ")' ~/piosk/config.json) \
   --kiosk \
