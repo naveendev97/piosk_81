@@ -17,7 +17,8 @@ git clone https://github.com/naveendev97/piosk_81.git piosk || git -C piosk pull
 # Set up wayfire autostart config to start up browser & switcher
 echo "[autostart]" >> $SITE/.config/wayfire.ini
 echo "browser = $SITE/piosk/scripts/browser.sh" >> $SITE/.config/wayfire.ini
-echo "switcher = bash $SITE/piosk/scripts/switcher.sh" >> $SITE/.config/wayfire.ini
+#enable if auto switch needed
+# echo "switcher = bash $SITE/piosk/scripts/switcher.sh" >> $SITE/.config/wayfire.ini
 
 # If PiOSK config doesn't exist, try backup or use sample config
 if [ ! -f $SITE/piosk/config.json ]; then
