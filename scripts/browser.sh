@@ -30,3 +30,7 @@ chromium-browser \
   --disable-composited-antialiasing \
   --start-maximized \
   --incognito \
+  --autoplay-policy=no-user-gesture-required \
+  --disable-features=PreloadMediaEngagementData \
+  
+  
