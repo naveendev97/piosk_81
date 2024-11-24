@@ -1,7 +1,7 @@
 {
     "urls": [
         {
-            "url": "http://localhost/prcon/frolist.php"
+            "url": "http://localhost/prcon/bfcheck.php"
         }
     ]
 }
